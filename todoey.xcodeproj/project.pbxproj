@@ -12,6 +12,8 @@
 		4D5FE8F821881FB8005DA60C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5FE8F621881FB8005DA60C /* Main.storyboard */; };
 		4D5FE8FA21881FBC005DA60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5FE8F921881FBC005DA60C /* Assets.xcassets */; };
 		4D5FE8FD21881FBC005DA60C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5FE8FB21881FBC005DA60C /* LaunchScreen.storyboard */; };
+		4D5FE90521884BD7005DA60C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5FE90421884BD7005DA60C /* Item.swift */; };
+		4D5FE90B21885216005DA60C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D5FE90A21885216005DA60C /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		4D5FE8F921881FBC005DA60C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D5FE8FC21881FBC005DA60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D5FE8FE21881FBC005DA60C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D5FE90421884BD7005DA60C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		4D5FE90A21885216005DA60C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		4D5FE8E621881FB8005DA60C = {
 			isa = PBXGroup;
 			children = (
+				4D5FE90A21885216005DA60C /* Default-568h@2x.png */,
 				4D5FE8F121881FB8005DA60C /* todoey */,
 				4D5FE8F021881FB8005DA60C /* Products */,
 			);
@@ -55,13 +60,46 @@
 			isa = PBXGroup;
 			children = (
 				4D5FE8F221881FB8005DA60C /* AppDelegate.swift */,
-				4D5FE8F421881FB8005DA60C /* TodoListViewController.swift */,
-				4D5FE8F621881FB8005DA60C /* Main.storyboard */,
-				4D5FE8F921881FBC005DA60C /* Assets.xcassets */,
-				4D5FE8FB21881FBC005DA60C /* LaunchScreen.storyboard */,
+				4D5FE90721884C07005DA60C /* Controllers */,
+				4D5FE90621884BE4005DA60C /* Data Model */,
+				4D5FE90821884C28005DA60C /* Views */,
 				4D5FE8FE21881FBC005DA60C /* Info.plist */,
+				4D5FE90921884C3C005DA60C /* Supporting Files */,
 			);
 			path = todoey;
+			sourceTree = "<group>";
+		};
+		4D5FE90621884BE4005DA60C /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D5FE90421884BD7005DA60C /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		4D5FE90721884C07005DA60C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D5FE8F421881FB8005DA60C /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D5FE90821884C28005DA60C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D5FE8F621881FB8005DA60C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D5FE90921884C3C005DA60C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D5FE8F921881FBC005DA60C /* Assets.xcassets */,
+				4D5FE8FB21881FBC005DA60C /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D5FE8FD21881FBC005DA60C /* LaunchScreen.storyboard in Resources */,
+				4D5FE90B21885216005DA60C /* Default-568h@2x.png in Resources */,
 				4D5FE8FA21881FBC005DA60C /* Assets.xcassets in Resources */,
 				4D5FE8F821881FB8005DA60C /* Main.storyboard in Resources */,
 			);
@@ -136,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D5FE8F521881FB8005DA60C /* TodoListViewController.swift in Sources */,
+				4D5FE90521884BD7005DA60C /* Item.swift in Sources */,
 				4D5FE8F321881FB8005DA60C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
